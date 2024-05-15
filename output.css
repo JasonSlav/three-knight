@@ -1,0 +1,613 @@
+    *,
+    ::before,
+    ::after {
+      box-sizing: border-box;
+      border-width: 0;
+      border-style: solid;
+      border-color: #e5e7eb;
+    }
+
+    html,
+    :host {
+      line-height: 1.5;
+      -webkit-text-size-adjust: 100%;
+      -moz-tab-size: 4;
+      -o-tab-size: 4;
+      tab-size: 4;
+      font-family: Inter, ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+      font-feature-settings: normal;
+      font-variation-settings: normal;
+      -webkit-tap-highlight-color: transparent;
+      /* background-color: #f1f1f1; */
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      line-height: inherit;
+      /* user-select: none; */
+    }
+
+    hr {
+      height: 0;
+      color: inherit;
+      border-top-width: 1px;
+    }
+
+    abbr:where([title]) {
+      -webkit-text-decoration: underline dotted;
+      text-decoration: underline dotted;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-size: inherit;
+      font-weight: inherit;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: inherit;
+    }
+
+    b,
+    strong {
+      font-weight: bolder;
+    }
+
+    code,
+    kbd,
+    samp,
+    pre {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+      font-feature-settings: normal;
+      font-variation-settings: normal;
+      font-size: 1em;
+    }
+
+    small {
+      font-size: 80%;
+    }
+
+    sub,
+    sup {
+      font-size: 75%;
+      line-height: 0;
+      position: relative;
+      vertical-align: baseline;
+    }
+
+    sub {
+      bottom: -0.25em;
+    }
+
+    sup {
+      top: -0.5em;
+    }
+
+    table {
+      text-indent: 0;
+      border-color: inherit;
+      border-collapse: collapse;
+    }
+
+    button,
+    input,
+    optgroup,
+    select,
+    textarea {
+      font-family: inherit;
+      font-feature-settings: inherit;
+      font-variation-settings: inherit;
+      font-size: 100%;
+      font-weight: inherit;
+      line-height: inherit;
+      letter-spacing: inherit;
+      color: inherit;
+      margin: 0;
+      padding: 0;
+    }
+
+    button,
+    select {
+      text-transform: none;
+    }
+
+    button,
+    input:where([type='button']),
+    input:where([type='reset']),
+    input:where([type='submit']) {
+      -webkit-appearance: button;
+      background-color: transparent;
+      background-image: none;
+    }
+
+    :-moz-focusring {
+      outline: auto;
+    }
+
+    :-moz-ui-invalid {
+      box-shadow: none;
+    }
+
+    progress {
+      vertical-align: baseline;
+    }
+
+    ::-webkit-inner-spin-button,
+    ::-webkit-outer-spin-button {
+      height: auto;
+    }
+
+    [type='search'] {
+      -webkit-appearance: textfield;
+      outline-offset: -2px;
+    }
+
+    ::-webkit-search-decoration {
+      -webkit-appearance: none;
+    }
+
+    ::-webkit-file-upload-button {
+      -webkit-appearance: button;
+      font: inherit;
+    }
+
+    summary {
+      display: list-item;
+    }
+
+    blockquote,
+    dl,
+    dd,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    hr,
+    figure,
+    p,
+    pre {
+      margin: 0;
+    }
+
+    fieldset {
+      margin: 0;
+      padding: 0;
+    }
+
+    legend {
+      padding: 0;
+    }
+
+    ol,
+    ul,
+    menu {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    dialog {
+      padding: 0;
+    }
+
+    textarea {
+      resize: vertical;
+    }
+
+    input::-moz-placeholder,
+    textarea::-moz-placeholder {
+      opacity: 1;
+      color: #9ca3af;
+    }
+
+    input::placeholder,
+    textarea::placeholder {
+      opacity: 1;
+      color: #9ca3af;
+    }
+
+    button,
+    [role="button"] {
+      cursor: pointer;
+    }
+
+    :disabled {
+      cursor: default;
+    }
+
+    img,
+    svg,
+    video,
+    canvas,
+    audio,
+    iframe,
+    embed,
+    object {
+      display: block;
+      vertical-align: middle;
+    }
+
+    [hidden] {
+      display: none;
+    }
+
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    a {
+      font-family: "Montserrat", sans-serif;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #121212;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      background-color: #121212;
+    }
+
+    .modal-content {
+      margin: auto;
+      background-color: #fff;
+      position: relative;
+      padding: 0;
+      outline: 0;
+      width: 600px
+    }
+
+    .animate-zoom {
+      animation: animatezoom 0.6s
+    }
+
+    @keyframes animatezoom {
+      from {
+        transform: scale(0)
+      }
+
+      to {
+        transform: scale(1)
+      }
+    }
+
+    .container {
+      padding: 0.01em 16px;
+      color: #000 !important;
+      background-color: #f1f1f1 !important;
+      display: block;
+      width: 100%;
+    }
+
+    .newspaper {
+      overflow: hidden;
+      position: relative
+    }
+
+    .newspaper a:before {
+      content: '';
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      position: absolute;
+    }
+
+    .closebtn {
+      float: right !important;
+      background-color: transparent !important;
+      font-size: 36px !important;
+      margin: auto auto auto auto !important
+    }
+
+    .closebtn:hover {
+      cursor: pointer;
+    }
+
+    .xlarge {
+      font-size: 24px !important
+    }
+
+    .large {
+      font-size: 12px !important;
+    }
+
+    .headerr {
+      display: block;
+      position: fixed;
+      left: 0;
+      right: 0;
+      background-color: #f2f2f2;
+      color: #121212;
+      text-align: center;
+      font-size: 12px;
+      padding-top: 0.2em;
+      z-index: 2;
+    }
+
+    .bg-black-50 {
+      background-color: #121212 !important
+    }
+
+    .gray-bg {
+      background-color: #282828 !important
+    }
+
+    .text {
+      display: inline-block;
+      vertical-align: top;
+    }
+
+    .bawah {
+      position: absolute;
+      bottom: 0px;
+    }
+
+    .shopnow {
+      text-align: center;
+      font-size: 50px;
+    }
+
+    .top-web {
+      display: block;
+      width: 55%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .logres:hover {
+      color: #282828;
+    }
+
+    .modal {
+      z-index: 3;
+      display: none;
+      padding-top: 100px;
+      position: fixed;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgb(0, 0, 0);
+      background-color: rgba(0, 0, 0, 0.4)
+    }
+
+    #shirts {
+      display: flex;
+      justify-content: center;
+    }
+    .shirt-container
+    {
+      display: flex;
+      width: 30%;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      transition: 0.3s;
+      display: flex;
+      flex-direction: column;
+      cursor: pointer;
+    } 
+    .shhover {
+      width: 70%;
+    }
+
+    .shirt-container:hover {
+      background-color: #f2f2f2;
+      border-radius: 7px;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .modal-content {
+      margin: auto;
+      background-color: #fff;
+      position: relative;
+      padding: 0;
+      outline: 0;
+      width: 600px
+    }
+
+    .animate-zoom {
+      animation: animatezoom 0.6s
+    }
+
+    .cart {
+      width: 200px;
+      height: 100vh;
+      background-color: #f1f1f1;
+      position: fixed;
+      top: 30px;
+      right: 0;
+      transition: all 0.3s ease-in-out;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .isi-cart {
+      margin: 2em 0 2em 10px;
+    }
+
+    .proceed {
+      display: block; 
+      margin-left: auto; 
+      margin-right: auto;
+    }
+
+    .proceed:hover {
+      border: #121212 1px solid;
+      color: #fff;
+      background-color: #121212;
+    }
+
+    .cart.hidden {
+      width: 0;
+      display: none;
+    }
+
+    .cart body {
+      padding-right: 200px;
+    }
+
+    @media screen and (max-width: 768px) {
+      #primary {
+        width: 100%;
+      }
+
+      #secondary {
+        width: 100%;
+        margin: 0;
+        border: none;
+      }
+
+      .modal {
+        padding-top: 50px
+      }
+
+      .modal-content {
+        width: 500px
+      }
+
+      .shopnow {
+        font-size: 2em;
+      }
+
+      .top-web {
+        width: 100%;
+      }
+    }
+
+    @media (max-width: 360px) {
+      .cart {
+        width: auto;
+      }
+    }
+
+    @media (min-width: 360px) and (max-width: 768px) {
+      .modal {
+        padding-top: 30px
+      }
+
+      #shirts {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .shirt-container {
+        margin: auto;
+      }
+
+      img.shhover {
+        margin-bottom: -20px !important;
+        width: 400%;
+      }
+
+      .modal-content {
+        margin: 0 10px;
+        width: auto !important
+      }
+
+      .top-web {
+        width: 100%;
+      }
+
+      .shopnow {
+        font-size: 1.5em;
+      }
+
+      img {
+        width: 100%;
+      }
+
+      .cart {
+        width: 100vw;
+      }
+
+      .isi-cart {
+        text-align: center;
+        margin-left: 0;
+      }
+
+      .proceed {
+        position: inherit;
+        right: 15px;
+      }
+    }
+
+    @keyframes animatezoom {
+      from {
+        transform: scale(0)
+      }
+
+      to {
+        transform: scale(1)
+      }
+    }
+
+    .xlarge {
+      font-size: 24px !important
+    }
+
+    .bg-black-50 {
+      background-color: #121212 !important
+    }
+
+    @keyframes slideIn {
+      0% {
+        transform: translateX(-100%);
+      }
+
+      100% {
+        transform: translateX(0);
+      }
+    }
+
+    @keyframes slideOut {
+      0% {
+        transform: translateX(0);
+      }
+
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+
+    @media screen and (max-width: 1080px) {
+
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+    }
+
+    @media screen and (max-width: 768px) {
+      /* #shirts {
+        max-width: fit-content;
+      } */
+    }
+
+    @media (min-width: 768px) and (max-width: 1080px) {
+
+      /* #shirts {
+        display: flex;
+        flex-direction: row;
+      }
+
+      .shhover {
+        max-width: 400px;
+      } */
+    }
