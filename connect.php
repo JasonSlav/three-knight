@@ -7,7 +7,7 @@ $db = 'tkn';
 
 $error = '';
 
-$cnn = new mysqli($host, $user, $pass, $db);
+$cnn = mysqli_connect($host, $user, $pass, $db);
 
 if (!$cnn) {
   header("location: database.php");
