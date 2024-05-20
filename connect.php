@@ -11,5 +11,6 @@ $cnn = mysqli_connect($host, $user, $pass, $db);
 
 if (!$cnn) {
   header("location: database.php");
+  exit();
 }
 ?>
