@@ -28,6 +28,10 @@
       /* user-select: none; */
     }
 
+    form {
+      display: inline;
+    }
+
     hr {
       height: 0;
       color: inherit;

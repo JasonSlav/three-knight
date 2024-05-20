@@ -57,7 +57,7 @@
           $sql2 = "SELECT * FROM barang WHERE id_barang = '$id'";
           $q2 = mysqli_query($cnn, $sql2);
           $r2 = mysqli_fetch_array($q2);
-          echo "<p> " . $r2['nama_barang'] . ": " . $r1['jumlah'] . " </p>";
+          echo "<form style='display: flex; align-items: center;'><input type='button' value='x' onclick='remove()' style='margin-right: 10px;'><span>" . $r2['nama_barang'] . ": " . $r1['jumlah'] . "</span></form>";
           $harga = $r2['harga'] * $r1['jumlah'];
           $total += $harga;
         }
